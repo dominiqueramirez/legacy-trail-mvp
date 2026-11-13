@@ -2,6 +2,8 @@
 
 A quiet 3D walk of remembrance featuring ten Veterans whose stories appear in **VA News** and the **Veterans Legacy Memorial (VLM)**.
 
+**Live Web Demo:** [https://dominiqueramirez.github.io/legacy-trail-mvp/](https://dominiqueramirez.github.io/legacy-trail-mvp/)
+
 ## Running Locally
 
 From this folder, start a local HTTP server:

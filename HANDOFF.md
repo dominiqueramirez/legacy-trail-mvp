@@ -10,12 +10,15 @@ _Last updated: 2026-11-13_
 
 ---
 
-## 2. How to Run & Verify Locally
+## 2. How to Run, Deploy & Verify
 1. Check if port `8000` is already serving; if not, start a local HTTP server from the workspace root (currently running in background on port `8000`, PID `37654`):
    ```bash
    lsof -i :8000 -sTCP:LISTEN || /usr/bin/python3 -m http.server 8000
    ```
 2. Open **http://localhost:8000** in a browser (`fetch('./veterans.json')` and the ES module import map require HTTP rather than `file://`).
+3. **GitHub & GitHub Pages**:
+   - **Repository**: `https://github.com/dominiqueramirez/legacy-trail-mvp` (remote `origin`, branch `main`)
+   - **Live GitHub Pages URL**: `https://dominiqueramirez.github.io/legacy-trail-mvp/` (deploys automatically on push to `main`; keep all asset paths relative so the `/legacy-trail-mvp/` subpath resolves cleanly).
 
 ---
 
