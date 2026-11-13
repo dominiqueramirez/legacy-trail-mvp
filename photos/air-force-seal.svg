@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="United States Air Force Emblem">
+  <defs>
+    <radialGradient id="afBg" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#1e3866"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </radialGradient>
+    <linearGradient id="afGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5ca87"/>
+      <stop offset="50%" stop-color="#c39d4b"/>
+      <stop offset="100%" stop-color="#9e7a2f"/>
+    </linearGradient>
+    <linearGradient id="afSilver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7f9fc"/>
+      <stop offset="55%" stop-color="#cfd8e6"/>
+      <stop offset="100%" stop-color="#9aa8bd"/>
+    </linearGradient>
+    <path id="topArc" d="M 62,200 A 138,138 0 1,1 338,200"/>
+    <path id="botArc" d="M 338,200 A 138,138 0 1,1 62,200"/>
+  </defs>
+
+  <!-- Soft stone backdrop -->
+  <rect width="400" height="400" fill="#ebe7df"/>
+
+  <!-- Outer medallion -->
+  <circle cx="200" cy="200" r="168" fill="url(#afBg)" stroke="url(#afGold)" stroke-width="8"/>
+  <circle cx="200" cy="200" r="154" fill="none" stroke="url(#afGold)" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="200" cy="200" r="118" fill="#132649" stroke="url(#afGold)" stroke-width="2.5"/>
+
+  <!-- Ring inscription -->
+  <text fill="#ebd59d" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" font-weight="600" letter-spacing="3.6">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">UNITED STATES AIR FORCE</textPath>
+  </text>
+  <text fill="#d8be80" font-family="Georgia, 'Times New Roman', serif" font-size="13" letter-spacing="4.5">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">★  SERVICE  ·  HONOR  ★</textPath>
+  </text>
+
+  <!-- Stylized Hap Arnold / Air Force Wings & Star -->
+  <g transform="translate(200, 196)">
+    <!-- Upper swept wings -->
+    <path d="M -86,-28 L -18,4 L -32,20 L -76,-6 Z" fill="url(#afSilver)"/>
+    <path d="M 86,-28 L 18,4 L 32,20 L 76,-6 Z" fill="url(#afSilver)"/>
+    <path d="M -72,-6 L -24,18 L -38,30 L -64,12 Z" fill="#b9c5d8"/>
+    <path d="M 72,-6 L 24,18 L 38,30 L 64,12 Z" fill="#b9c5d8"/>
+    <path d="M -56,14 L -26,28 L -36,38 L -50,28 Z" fill="#9eadc4"/>
+    <path d="M 56,14 L 26,28 L 36,38 L 50,28 Z" fill="#9eadc4"/>
+
+    <!-- Center disc & five-point star -->
+    <circle cx="0" cy="28" r="24" fill="#19335e" stroke="url(#afGold)" stroke-width="2"/>
+    <polygon points="0,7 5.6,21 20.5,21 8.5,29.8 13,44 0,35.2 -13,44 -8.5,29.8 -20.5,21 -5.6,21" fill="url(#afSilver)"/>
+    <circle cx="0" cy="27.5" r="5.5" fill="#9e2a2b"/>
+
+    <!-- Three heritage stars above -->
+    <g fill="url(#afGold)">
+      <polygon points="0,-58 3,-50 11,-50 4.6,-45 7,-37 0,-42 -7,-37 -4.6,-45 -11,-50 -3,-50"/>
+      <polygon points="-34,-46 -31.5,-39.5 -24.5,-39.5 -30,-35.3 -28,-28.5 -34,-32.8 -40,-28.5 -38,-35.3 -43.5,-39.5 -36.5,-39.5"/>
+      <polygon points="34,-46 36.5,-39.5 43.5,-39.5 38,-35.3 40,-28.5 34,-32.8 28,-28.5 30,-35.3 24.5,-39.5 31.5,-39.5"/>
+    </g>
+  </g>
+</svg>
